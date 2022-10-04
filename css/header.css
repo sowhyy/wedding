@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+header {
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background-color: #fff;
+  color: #0f4b81;
+  top: 0;
+  left: 0;
+  transition: a 0.5s;
+}
+
+/* 로고 */
+h1 {
+  width: 180px;
+  height: 140px;
+  background: 0 0 / contain url(../img/logo1.png) no-repeat;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  margin-left: -90px;
+  text-decoration: none;
+}
+
+/* 네비 메뉴 */
+#nav {
+  position: absolute;
+  top: 300px;
+  right: 28%;
+}
+#nav a {
+  display: block;
+  padding: 15px 10px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.8;
+  transition: all 0.5s;
+  text-align: center;
+}
+#nav a:hover {
+  color: #69f;
+}
+#nav a i {
+  margin-right: 10px;
+}
+
+/*  sns 링크  */
+#sns {
+  position: absolute;
+  bottom: 50px;
+  right: 25%;
+}
+#sns a {
+  float: left;
+  margin: 0 5px ;
+}
+
+#sns a:hover  {
+  color: #69f;
+}
+
+
+
+

@@ -1,0 +1,173 @@
+section {
+  width: 85%;
+  position: relative;
+  margin-left: 15%;
+}
+
+article {
+  float: left;
+  height: 300px;
+  transition: all 0.5s;
+  animation: scale 1s 1;
+}
+
+article > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* 배경이미지 삽입 */
+article div.bg1 {
+  background-image: url(../img/bg1.jpg);
+}
+article div.bg4 {
+  background-image: url(../img/bg4.jpg);
+}
+article div.bg5 {
+  background-image: url(../img/bg5.jpg);
+}
+article div.bg7 {
+  background-image: url(../img/bg7.jpg);
+}
+article div.bg9 {
+  background-image: url(../img/bg9.jpg);
+}
+/* 이미지 박스 */
+article div.bg {
+  background-size: cover;
+  background-position: cneter center;
+}
+article div.bg span {
+  font-family: 'Alex Brush', cursive;
+  font-size: 70px;
+  color: #0f4b81;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.6s;
+}
+
+/* FIXME:이미지 텍스트 */
+article div.bg1 span {
+  font-size: 170px;
+  color: #fff;
+  position: absolute;
+  bottom: -40px;
+  right: -2px;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.5s;
+}
+article:hover div.bg span {
+  opacity: 1;
+  transform: scale(1);
+}
+article div.bg1:hover span {
+  transform: rotateY(360deg);
+  color: #0f4b81;
+}
+
+/* 텍스트 박스 */
+article div.txt {
+  color: #555;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.2;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px 30px;
+  transition: all 1s;
+}
+article:nth-child(3) div.txt {
+  background: #e9faff;
+}
+article div.txt i {
+  font-size: 300px;
+  color: #b5e8fc;
+  opacity: 0;
+  position: absolute;
+  bottom: -70px;
+  right: -200px;
+  transition: all 0.7s;
+}
+article:nth-child(3) div.txt i {
+  position: absolute;
+  bottom: -20px;
+  right: -15px;
+  font-size: 200px;
+  color: #fff;
+  opacity: 0.7;
+}
+article div.txt strong {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+article:hover div.txt {
+  background: #e2f3fa;
+
+}
+article:hover div.txt i {
+  right: 0;
+  opacity: 0.5;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 각각의 박스 사이즈 정의 */
+article:nth-child(1) {
+  width: 60%;
+  height: 600px;
+  background-color: #ddd;
+}
+article:nth-child(2) {
+  width: 40%;
+  background-color: #ccc;
+}
+article:nth-child(3) {
+  width: 20%;
+  background-color: #999;
+}
+article:nth-child(4) {
+  width: 20%;
+  background-color: #aaa;
+}
+article:nth-child(5) {
+  width: 20%;
+  background-color: #999;
+}
+article:nth-child(6) {
+  width: 40%;
+  background-color: #888;
+}
+article:nth-child(7) {
+  width: 40%;
+  height: 600px;
+  background-color: #777;
+  float: right;
+}
+article:nth-child(8) {
+  width: 20%;
+  background-color: #666;
+  float: left;
+}
+article:nth-child(9) {
+  width: 40%;
+  background-color: #555;
+}
+
+
